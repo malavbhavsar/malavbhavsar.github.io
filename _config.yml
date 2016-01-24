@@ -3,7 +3,7 @@ title: Malav Bhavsar
 description: 'Hello, my name is Malav Bhavsar. I am a Full Stack Engineer at Rocket Fuel. I lead UI development for our Brand product.'
 url: 'http://malav.io'
 baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-72841310-1'
 
 author:
   name: 'Malav Bhavsar'
