@@ -1,14 +1,14 @@
 /* TEAM */
-Developer & Designer: Josh Gerdes
-Twitter: @joshgerdes
-Site: http://joshgerdes.com
-Location: Minneapolis, MN, USA
-						
+Developer & Designer: Malav Bhavsar
+Twitter: @malavbhavsar
+Site: http://malav.io
+Location: Sunnyvale, CA, USA
+
 /* THANKS */
-Name: Dale Anthony
+Name: Josh Gerdes
 
 /* SITE */
-Last update: 2015/02/23
+Last update: 2016/01/24
 Standards: HTML5, CSS3
-Components: Jekyll
-Software: Sublime Text, Photoshop
+Components: Jekyll, Jekyll-Uno
+Software: Sublime Text
