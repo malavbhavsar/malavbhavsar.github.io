@@ -17,7 +17,8 @@ destination: _site
 paginate: 10
 permalink: /:year/:title/
 markdown: kramdown
-highlighter: pygments
+highlighter: rogue
+gems: [jekyll-paginate]
 
 kramdown:
   # use Github Flavored Markdown
