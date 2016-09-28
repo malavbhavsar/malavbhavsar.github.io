@@ -17,7 +17,7 @@ destination: _site
 paginate: 10
 permalink: /:year/:title/
 markdown: kramdown
-highlighter: rogue
+highlighter: rouge
 gems:
   - jekyll-paginate
   - jekyll-redirect-from
