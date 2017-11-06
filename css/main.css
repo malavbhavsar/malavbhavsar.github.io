@@ -50,3 +50,24 @@
   border: 3px solid #fff;
   border-radius:100%;
 }
+
+@media (min-width: 320px) {
+  .responsive-image {
+    width: 256px;
+  }
+}
+@media (min-width: 425px) {
+  .responsive-image {
+    width: 340px;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-image {
+    width: 600px;
+  }
+}
+@media (min-width: 960px) {
+  .responsive-image {
+    width: 640px;
+  }
+}

@@ -18,14 +18,25 @@ paginate: 10
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-responsive-image
 
 kramdown:
   # use Github Flavored Markdown
   input: GFM
   # do not replace newlines by <br>s
   hard_wrap: false
+
+responsive_image:
+  # Path to the image template.
+  template: _includes/responsive-image.html
+  default_quality: 100
+  sizes:
+    - width: 256
+    - width: 340
+    - width: 600
+    - width: 640
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
