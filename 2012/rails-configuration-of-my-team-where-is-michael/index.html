@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Malav Bhavsar</title>
+  <title>Rails configuration of my team ‘Where is Michael?’</title>
   <meta name="description" content="Hello, my name is Malav Bhavsar. I am a Software Engineer at Square Capital. We are building future of lending.">
   <meta name="author" content="Malav Bhavsar">
   <meta name="HandheldFriendly" content="True">
@@ -42,7 +42,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://malav.io//">
+  <link rel="canonical" href="http://malav.io//2012/rails-configuration-of-my-team-where-is-michael/">
   <link rel="alternate" type="application/rss+xml" title="Malav Bhavsar" href="/feed.xml">
 </head>
 
@@ -145,58 +145,67 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <div class="main-post-list">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="27 Oct 2012" class="post-meta__date date">27 Oct 2012</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#ruby">ruby</a> <a href="/tags/#rails">rails</a> <a href="/tags/#config">config</a> </span>
+    </div>
+    <h1 class="post-title">Rails configuration of my team ‘Where is Michael?’</h1>
+  </header>
 
-  <ol class="post-list">
+  <section class="post">
+    <p>In my first semester at Carnegie Mellon, my favorite course is Introduction to Software Engineering. Students are divided in the teams of five and each team is assigned one VP of Engineering. Each team is supposed to follow XP and use rails to create a web application. Only one class in the week, team coding sessions, meeting with VP and more coding. Yeah, my favorite course.</p>
 
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="/2016/git-hublog/" title="git hublog">git hublog</a></h2>
-        <p class="excerpt">Sneak peak of git hublog project!
+<p>What I have learnt from my previous team projects is: if you organize your team workflow and project configuration, it is easier to maintain your sanity. If you somehow manage to embed your workflow into your project configuration then you have won half the battle, seriously. Ruby, rails and the tools made available by the awesome community makes that task easier. Following are the tools that you really really should (feel free to read it as ‘must’) use if you are doing rails project.</p>
 
-&hellip;</p>
-        <div class="post-list__meta"><time datetime="5 Jul 2016" class="post-list__meta--date date">5 Jul 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#git">git</a> <a href="/tags/#node.js">node.js</a> <a href="/tags/#curses">curses</a> <a href="/tags/#terminal">terminal</a> </span></div>
-        <hr class="post-list__divider">
-      </li>
+<h3 id="rvm">RVM</h3>
 
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="/2012/ruby-gem-for-sentiment-analysis-sentimentalizer/" title="RubyGem for Sentiment Analysis: Sentimentalizer">RubyGem for Sentiment Analysis: Sentimentalizer</a></h2>
-        <p class="excerpt">So, this month we had a Pittsburgh hackathon organized by facebook. I teamed up with Ruchir Patwa and made a simple web-app. It gets facebook status messages of one’s friends and predicts whether they are happy or sad by doing sentiment analysis. <a href="https://github.com/malavbhavsar/Friends-mood">Here</a> is the github repo of the project.
+<p>If you are not using RVM, you are going to have a really bad time. In simple words, this utility manages a different version of ruby and gems for each of your project. Imagine a scenario where a team member is using ruby 1.9.2 and the others are using 1.9.3, you are going to run into some serious demo day disasters. Every team member must use rvm and the .rvmrc file must be in the version control. If you are developing using Windows (I feel sorry for you), look into Pik. That’s all you have to do to avert a demo day disaster or a late night frenzy.</p>
 
-&hellip;</p>
-        <div class="post-list__meta"><time datetime="29 Nov 2012" class="post-list__meta--date date">29 Nov 2012</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#ruby">ruby</a> <a href="/tags/#gem">gem</a> <a href="/tags/#machine-learning">machine-learning</a> <a href="/tags/#sentiment-analysis">sentiment-analysis</a> </span></div>
-        <hr class="post-list__divider">
-      </li>
+<p>For quick intro to RVM: <a href="http://screencasts.org/episodes/how-to-use-rvm">http://screencasts.org/episodes/how-to-use-rvm</a></p>
 
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="/2012/rails-configuration-of-my-team-where-is-michael/" title="Rails configuration of my team ‘Where is Michael?’">Rails configuration of my team ‘Where is Michael?’</a></h2>
-        <p class="excerpt">In my first semester at Carnegie Mellon, my favorite course is Introduction to Software Engineering. Students are divided in the teams of five and each team is assigned one VP of Engineering. Each team is supposed to follow XP and use rails to create a web application. Only one class in the week, team coding sessions, meeting with VP and more coding. Yeah, my favorite course.
+<h3 id="bundler">Bundler</h3>
 
-&hellip;</p>
-        <div class="post-list__meta"><time datetime="27 Oct 2012" class="post-list__meta--date date">27 Oct 2012</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#ruby">ruby</a> <a href="/tags/#rails">rails</a> <a href="/tags/#config">config</a> </span></div>
-        <hr class="post-list__divider">
-      </li>
+<p>I don’t think anyone can dare to embark upon a Ruby or Rails journey without using Bundler. RVM will manage your gems, but it is useful to have Bundler when your gems are going to change frequently.</p>
 
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="/2011/anami/" title="Anami">Anami</a></h2>
-        <p class="excerpt"><!-- TODO: Use a plugin to embed instead of doing this for every embed object  -->
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<p>Here is an article which explains how Bundler and RVM play together: <a href="http://watirmelon.com/2011/01/17/easily-manage-your-rubies-with-rvm-bundler-and-pik/">http://watirmelon.com/2011/01/17/easily-manage-your-rubies-with-rvm-bundler-and-pik/</a></p>
 
-<div class="embed-container">
-<iframe src="https://www.youtube.com/embed/1TS4cp3c_uw/" frameborder="0" allowfullscreen=""></iframe>
-</div>
+<h3 id="rubymine">RubyMine</h3>
 
-&hellip;</p>
-        <div class="post-list__meta"><time datetime="27 Dec 2011" class="post-list__meta--date date">27 Dec 2011</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#short-film">short-film</a> <a href="/tags/#acting">acting</a> </span></div>
-        <hr class="post-list__divider">
-      </li>
+<p>Our course instructors were super awesome to buy us an educational license for RubyMine. It has lots of awesome features. Here are the best ones: automatically detects the ruby version from <code class="highlighter-rouge">.rvmrc</code> file and uses that for the project, automatically detects gems which are not installed, <code class="highlighter-rouge">Alt+Ctrl+R -&gt; all the available rake tasks</code>, <code class="highlighter-rouge">Alt+Ctrl+G -&gt; all the available rails generators.</code></p>
 
-  </ol>
+<p>That said, I still dream of the days when I will use just vim and bash or zsh. Until then, I am using IdeaVIM, which trains me to use VIM and Native Neighbourhood, which allows me to do Alt+Shift+S and get a shell. Btw, I strongly feel that RubyMine should have an inbuilt tab for shell.</p>
 
-  <hr class="post-list__divider ">
+<p>If you can’t get RubyMine, get Aptana Studio. It’s more eclipse-ish and easy to work with and it has inbuilt tab for shell.</p>
 
+<h3 id="travis-ci">Travis-ci</h3>
 
+<p>If you don’t have continuous integration server or don’t use it properly, you are going to die a horrible horrible death. Symptoms are questions like these “why something works on localhost but not on heroku?”, ”I know things are not working but when did they stop working? Which commit is at fault?”</p>
 
-</div>
+<p>We have set up the Travis-ci to run all our rspec and cucumber tests on two databases sqlite and postgresql. No more why-not-working-on-heroku problems. You can find an example <code class="highlighter-rouge">.travis.yml</code> file here: <a href="https://github.com/malavbhavsar/CMU-RPG/blob/master/.travis.yml">https://github.com/malavbhavsar/CMU-RPG/blob/master/.travis.yml</a> and the corresponding rake task here: <a href="https://github.com/malavbhavsar/CMU-RPG/blob/master/.travis.yml">https://github.com/malavbhavsar/CMU-RPG/blob/master/lib/tasks/travis_rspec_cucumber.rake</a></p>
+
+<p>Whenever someone pushes commit(s) on github, travi-ci hook detects that and runs all rspec and cucumber tests. Failed tests are mailed to the github repo owner. Set up filter and forward those emails to the team forum. Now, you can point at a person (at commit(s), if you don’t want to sound rude) and tell fix it, asap!</p>
+
+<p>Travis-ci badge is a standard feature of almost any repo of the gem that you are using in your project, get a similar badge for your project and show off.</p>
+
+<h3 id="gemnasium">Gemnasium</h3>
+
+<p>Gemnasium tracks your Gemfile and emails you if there is a patch, minor revision or major revision is available for a gem. Very useful, if a particular version isn’t going to provide backward-compatibility or you want to use latest features.</p>
+
+<p>It’s a badge, show off!</p>
+
+<h3 id="code-climate">Code climate</h3>
+
+<p>Everybody loves an A. Code climate gives A to F grades to each of your ruby file based on the complexity and duplication it has. It’s a good way to DRY out your code and get good grades!</p>
+
+<p>Again, it’s a badge. Show it off you must!</p>
+
+<p>Did I miss out anything? Are there any other awesome things out there? Please, comment!</p>
+
+<p>EDIT: In my recent experience, I have noticed that for people who don’t specify the exact gem versions are prone to run into errors where their test cases start to fail and there might be no apparent reason for it in the code. This can happen in a case where the new versions of the gem has arrived and travis runs your tests with new versions of gem. Solution to this problem is to use the exact gem versions. Also, if one can trigger travis to run tests when new version of any gem listed in Gemfile is released. Gemnasium should start doing this. They can just create a .gemnasium file which is updated everytime a new version of any gem listed in Gemfile is released. This will trigger travis to run the tests.</p>
+
+  </section>
+</article>
       </div>
 
       <footer class="footer">
